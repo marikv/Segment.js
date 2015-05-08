@@ -5,9 +5,8 @@ Demo: http://jsfiddle.net/sa3Lap58/
 
 Usage:
 
-Include the css
-
 ```html
+<!-- Include the css -->
 <link rel="stylesheet" type="text/css" href="segment.css" />
 
 <!-- Add some select elemets -->
