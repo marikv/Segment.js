@@ -1,6 +1,8 @@
 # Segment.js
 A jQuery plugin that transform any `select` element into a beautiful ios style segment control.
 
+Demo: http://jsfiddle.net/sa3Lap58/
+
 Usage:
 
 Include the css
