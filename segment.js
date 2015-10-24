@@ -6,7 +6,7 @@
 				var onchange = self.attr('onchange');
 				var wrapper = $("<div>",{class: "ui-segment"});
 				$(this).find("option").each(function (){
-					var option = $("<span>",{class: 'option',onclick:onchange,text: $(this).text(),value: $(this).val()});
+					var option = $("<span>",{class: 'option',text: $(this).text(),value: $(this).val()});
 					if ($(this).is(":selected")){
 						option.addClass("active");
 					}
@@ -16,6 +16,7 @@
 					wrapper.find("span.option").removeClass("active");
 					$(this).addClass("active");
 					self.val($(this).attr('value'));
+					if (onchange.length) eval(onchange);
 				});
 				$(this).after(wrapper);
 				$(this).hide();
